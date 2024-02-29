@@ -1,0 +1,18 @@
+.hero {
+	height: calc(100vh - $header-height);
+
+	&__slide {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: inherit;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	&__wrapper {
+		max-width: 400px;
+	}
+}
