@@ -1,0 +1,19 @@
+.promo {
+
+	&__slide {
+		display: block;
+		color: $dark;
+		text-decoration: none;
+		border-radius: 18px;
+		box-shadow: 0 0 20px 0 #2626261a;
+	}
+
+	&__body {
+		min-height: 200px;
+	}
+
+	&__img {
+		border-top-left-radius: 18px;
+		border-top-right-radius: 18px;
+	}
+}

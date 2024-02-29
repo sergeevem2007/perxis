@@ -26,6 +26,14 @@
 	}
 
 	&-pagination {
+
+		@include media-breakpoint-down(lg) {
+			left: 50% !important;
+			width: initial !important;
+			text-align: center;
+			transform: translateX(-50%);
+		}
+
 		bottom: 54px !important;
 		left: calc((100vw - 1272px) / 2) !important;
 		display: flex;
@@ -34,7 +42,7 @@
 
 		&-bullet {
 			margin: 0 13px !important;
-			background: #fff !important;
+			background: $secondary !important;
 			opacity: 1 !important;
 
 			&-active {
