@@ -17,6 +17,11 @@
 	}
 
 	&__slide {
+
+		@include media-breakpoint-down(lg) {
+			justify-content: flex-start;
+		}
+
 		position: relative;
 		display: flex;
 		flex-direction: column;

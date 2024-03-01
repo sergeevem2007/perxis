@@ -7,15 +7,17 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-12">
-								<div class="hero__wrapper">
-									<h1 class="fw-700 fs-42 text-white mb-2">{{ item.title }}</h1>
-									<p class="fs-20 lh-1 text-white mb-3">{{ item.subtitle }}</p>
-									<p class="text-white mb-4">{{ item.description }}</p>
-									<button type="button" class="btn btn-outline-light border-2 rounded-3 fw-700 fs-12 text-uppercase letter-spacing lh-sm py-25 px-4" data-id="{{ item.id }}">подобрать
-										<svg class="ms-3" width="18" height="18">
-											<use xlink:href="#ico-arrow"></use>
-										</svg>
-									</button>
+								<div class="hero__wrapper mt-44 mt-lg-0">
+									<h1 class="fw-700 fs-32 fs-lg-42 text-center text-lg-start text-white mb-2">{{ item.title }}</h1>
+									<p class="fs-20 lh-1 text-white text-center text-lg-start mb-3">{{ item.subtitle }}</p>
+									<p class="text-white text-center text-lg-start mb-4">{{ item.description }}</p>
+									<div class="d-flex justify-content-center justify-content-lg-start">
+										<button type="button" class="btn btn-outline-light border-2 rounded-3 fw-700 fs-12 text-uppercase letter-spacing lh-sm py-25 px-4" data-id="{{ item.id }}">подобрать
+											<svg class="ms-3" width="18" height="18">
+												<use xlink:href="#ico-arrow"></use>
+											</svg>
+										</button>
+									</div>
 								</div>
 							</div>
 						</div>
