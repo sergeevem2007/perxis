@@ -13,7 +13,19 @@ const heroSlider = new Swiper('.hero__slider', {
 
 	// Navigation arrows
 	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
+		enabled: false,
+	},
+	breakpoints: {
+		1400: {
+			navigation: {
+				enabled: true,
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			}
+		},
 	}
 });
+
+if (window.innerWidth > 1400) {
+	heroSlider.update();
+}

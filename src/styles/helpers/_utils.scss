@@ -18,27 +18,19 @@
 	}
 
 	&-button-prev {
-		left: 10vw;
+		left: min(calc((100vw - 1272px) / 2 - 50px), 10vw) !important;
 	}
 
 	&-button-next {
-		right: 10vw;
+		right: min(calc((100vw - 1272px) / 2 - 50px), 10vw) !important;
 	}
 
 	&-pagination {
 
-		@include media-breakpoint-down(lg) {
-			left: 50% !important;
-			width: initial !important;
-			text-align: center;
-			transform: translateX(-50%);
+		@include media-breakpoint-up(lg) {
+			display: flex;
+			align-items: center;
 		}
-
-		bottom: 54px !important;
-		left: calc((100vw - 1272px) / 2) !important;
-		display: flex;
-		align-items: center;
-		text-align: left;
 
 		&-bullet {
 			margin: 0 13px !important;
