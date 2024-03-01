@@ -1,0 +1,17 @@
+.ymap {
+
+	&__box {
+		width: 100%;
+		height: 470px;
+	}
+
+	&__wrapper {
+		position: absolute;
+		top: 76px;
+		left: 0;
+		z-index: 10;
+		background-color: $white;
+		border-radius: 18px;
+		box-shadow: 0 0 20px 0 #16161633;
+	}
+}
