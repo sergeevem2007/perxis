@@ -15,10 +15,10 @@ async function initMap() {
 		{
 			location: {
 				// Координаты центра карты
-				center: [ 37.319472, 55.820371],
+				center: [ 37.395485, 55.867428],
 
 				// Уровень масштабирования
-				zoom: 12
+				zoom: 11
 			}
 		},
 		[
@@ -34,11 +34,23 @@ async function initMap() {
 		const markerElement = document.createElement('img');
 		markerElement.className = 'icon-marker';
 		markerElement.src = markerProp.iconSrc;
-		markerElement.onclick = () => alert(markerProp.message);
+		markerElement.onclick = () => {
+			ymapName.innerHTML = markerProp.name;
+			ymapAdress.innerHTML = markerProp.adress;
+			ymapTelF.innerHTML = markerProp.telF;
+			ymapTelS.innerHTML = markerProp.telS;
+		};
 		map.addChild(new YMapMarker({ coordinates: markerProp.coordinates }, markerElement));
 	});
 }
 
+const ymapName = document.getElementById('ymap-name');
+const ymapAdress = document.getElementById('ymap-adress');
+const ymapTelF = document.getElementById('ymaps-tel-f');
+const ymapTelS = document.getElementById('ymaps-tel-s');
+
 const markerProps = 	[
-	{ iconSrc: '/src/assets/img/logo.png' , coordinates: [37.319472, 55.820371] }
+	{ iconSrc: '/src/assets/img/ico-geo.svg' , coordinates: [37.319472, 55.820371], name: 'Dealer Company Name', adress: 'Москва, ул. Автодилерская, 23, стр. 1', telF: '+7 (495) 428 12 94', telS: '+7 (495) 428 12 95' },
+	{ iconSrc: '/src/assets/img/ico-geo-active.svg' , coordinates: [37.4448401, 55.889358], name: 'Company Dealer Name', adress: 'Москва, ул. Филевский бульвар, 5', telF: '+7 (495) 555 55 55', telS: '+7 (495) 666 66 66' },
+	{ iconSrc: '/src/assets/img/ico-geo.svg' , coordinates: [37.736726, 55.909974], name: 'Name Dealer Company ', adress: 'Москва, ул. Маяковская, 7, стр. 11', telF: '+7 (495) 777 77 77', telS: '+7 (495) 888 88 88' },
 ];
