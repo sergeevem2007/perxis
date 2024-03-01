@@ -13,5 +13,10 @@ export default {
 		{img: "/src/assets/img/promo-1.jpg", title: "Название акции или предложения", description: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", url:"#"},
 		{img: "/src/assets/img/promo-2.jpg", title: "Название предложения", description: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", url:"#"},
 		{img: "/src/assets/img/promo-3.jpg", title: "Название акции", description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", url:"#"},
+	],
+	edgeSlider: [
+		{img: "/src/assets/img/ico-edge-1.svg", title: "Выгодно и удобно", description: "Лучшие предложения покупки с учетом trade-in и в кредит"},
+		{img: "/src/assets/img/ico-edge-2.svg", title: "Автомобили в наличии", description: "Выбирайте онлайн, экономя время на визит в дилерский центр"},
+		{img: "/src/assets/img/ico-edge-3.svg", title: "Надежный сервис", description: "Официальный сервис, оригинальные и проверенные запчасти"},
 	]
 };

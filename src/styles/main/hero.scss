@@ -8,6 +8,7 @@
 			@include media-breakpoint-up(lg) {
 				bottom: 54px !important;
 				left: calc((100vw - 1272px) / 2) !important;
+				justify-content: flex-start;
 				text-align: left;
 			}
 

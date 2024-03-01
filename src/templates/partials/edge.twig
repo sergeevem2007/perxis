@@ -1,0 +1,23 @@
+<section class="edge pt-7 pb-8">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h2 class="fw-700 fs-36 text-center mb-5">Акции и предложения</h2>
+				<div class="swiper edge__slider mb-44 py-4 px-3">
+					<div class="swiper-wrapper">
+						{% for item in site.edgeSlider %}
+						<div class="swiper-slide">
+							<div class="edge__slide p-44 d-flex flex-column align-items-center">
+								<img src="{{ item.img }}" alt="{{ item.title }}" class="img-fluid mx-auto mb-3">
+								<h3 class="fw-700 fs-20 text-center mb-3">{{ item.title }}</h3>
+								<p class="text-center mb-4">{{ item.description }}</p>
+							</div>
+						</div>
+						{% endfor %}
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
