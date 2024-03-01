@@ -44,9 +44,20 @@ $danger: #dc3545;
 $light: #f8f9fa;
 $dark: #262626;
 $dark-emphasis: #505050;
+$white: #fff;
 
 // Bootstrap Container Width
 $grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1400px);
 $container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px, xxl: 1272px);
+
+$accordion-border-width: 0;
+$accordion-bg: $dark;
+$accordion-button-color: $white;
+$accordion-button-bg: $dark;
+$accordion-button-active-bg: $dark;
+$accordion-button-active-color: $white;
+$accordion-button-focus-box-shadow: transparent;
+$accordion-button-icon: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M20 9.88889C20 9.33661 19.5523 8.88889 19 8.88889H12.1111C11.5588 8.88889 11.1111 8.44117 11.1111 7.88889V1C11.1111 0.447716 10.6634 0 10.1111 0H9.88889C9.33661 0 8.88889 0.447715 8.88889 1V7.88889C8.88889 8.44117 8.44117 8.88889 7.88889 8.88889H1C0.447716 8.88889 0 9.33661 0 9.88889V10.1111C0 10.6634 0.447715 11.1111 1 11.1111H7.88889C8.44117 11.1111 8.88889 11.5588 8.88889 12.1111V19C8.88889 19.5523 9.33661 20 9.88889 20H10.1111C10.6634 20 11.1111 19.5523 11.1111 19V12.1111C11.1111 11.5588 11.5588 11.1111 12.1111 11.1111H19C19.5523 11.1111 20 10.6634 20 10.1111V9.88889Z" fill="white"/></svg>');
+$accordion-button-active-icon: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M22 11.8889C22 11.3366 21.5523 10.8889 21 10.8889H3C2.44772 10.8889 2 11.3366 2 11.8889V12.1111C2 12.6634 2.44772 13.1111 3 13.1111H21C21.5523 13.1111 22 12.6634 22 12.1111V11.8889Z" fill="white"/></svg>');
 
 $header-height: 70px;
