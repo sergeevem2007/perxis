@@ -1,4 +1,16 @@
 .header {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 100;
 	height: $header-height;
 	box-shadow: 0 4px 10px 0 #0000001a;
+	transition: transform .3s ease;
+
+	&.hide {
+		transform: translateY(-$header-height);
+		transition: transform .3s ease;
+
+	}
 }
